@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디바이 안</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap-4.5.0/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css"> 
+
+    <!-- 스크립트 -->
+    <script src="./js/bootstrap-4.5.0/bootstrap.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="container">
+                <div class="header">
+                    <div class="header-menu">
+                       <a href="">매입장</a>
+                       <a href="">매출장</a>
+                       <a href="">지출장</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contents">
+            <div class="container">
+                <div class="input-form">
+                    <h3>매입 등록 </h3>
+                    <form class="form-inline" action="post">
+                        
+                        <div class="form-group">
+                            <label class="sr-only" for="">날짜</label>
+                            <input type="date" class="form-control" name="" id="">
+                        </div>
+                        <div class="form-group">
+                            <label  class="sr-only" for="">거래처</label>
+                            <input type="text" class="form-control" placeholder="거래처" />
+                        </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="amout">매입금액</label>
+                                <input type="text" class="form-control" name="amout" id="amout" placeholder="매입금액">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="">자료구분</label>
+                                <select  class="form-control" name="" id="" aria-placeholder="자료구분">
+                                    <option value=""> 발행 </option>
+                                    <option value=""> 안함 </option>
+                                </select>
+                            </div >
+                            <div class="form-group">
+                                <label  class="sr-only" for="">비고, 상세내용</label>
+                                <input type="text" class="form-control" name="desc" id="desc" placeholder="비고,상세내용">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">등록</button>
+                            </div>
+                    </form>
+                </div>
+                <div class="list">
+                    <h3 class="caption">매입 리스트 </h3>
+                    <div class="input-group">
+                        <input type="date" name="findFr" id="">
+                        <span>~</span>
+                        <input type="date" name="findTo" id="">
+                        <input type="text" class="form-control" placeholder="검색 키워드를 입력하세요!">
+                        <span class="input-group-btn">
+                          <button class="btn btn-secondary" type="button">찾기</button>
+                        </span>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>날짜</th>
+                                <th>거래처</th>
+                                <th>매입금액</th>
+                                <th>자료구분</th>
+                                <th>비고, 상세내용</th>
+                            </tr>
+                         </thead>
+                         <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <h2 class="ir_su">푸터 영역</h2>
+                <div class="footer">
+                    <address>
+                        Copyright&copy; dbyahn.com All Right Rederved
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

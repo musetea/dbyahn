@@ -1,0 +1,27 @@
+{
+  "name": "dbyahn",
+  "version": "1.0.0",
+  "description": "디바이안 관리 프로그램",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musetea/dbyahn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/musetea/dbyahn/issues"
+  },
+  "homepage": "https://github.com/musetea/dbyahn#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
